@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     subconfig.vm.box = BOX_NAME
     subconfig.vm.provision "shell", path: "web.sh"
     subconfig.vm.network "private_network", ip: "#{BASE_INT_NETWORK}.10", virtualbox__intnet: "intnet"
-    subconfig.vm.network "private_network", ip: "#{BASE_HOST_ONLY_NETWORK}.10", name: "NOMERETE"
+    subconfig.vm.network "private_network", ip: "#{BASE_HOST_ONLY_NETWORK}.10"
 
     subconfig.vm.hostname = WEB_NAME
     subconfig.vm.provider "virtualbox" do |vb|
