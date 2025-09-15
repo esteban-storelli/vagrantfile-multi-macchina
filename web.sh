@@ -13,7 +13,7 @@ cd /var/www/html
 # -q = quiet, scrive solo errori a terminale
 # -O salva con nome scelto (index.php) nella directory corrente
 sudo wget -q https://www.adminer.org/latest.php -O index.php
-sudo rm index.html
+# sudo rm index.html
 
 # Dà ownership all'utente e gruppo utilizzato da Apache (www-data)
 # -R = ricorsivo

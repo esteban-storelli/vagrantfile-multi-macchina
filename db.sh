@@ -25,6 +25,7 @@ sudo systemctl restart mysql
 # user: test_user
 # password: test_password
 # DB: test_db
+# -e = execute, permette di fare query direttamente senza entrare nella shell di mysql
 sudo mysql -u root -e "CREATE SCHEMA test_db"
 sudo mysql -u root -e "CREATE USER 'test_user'@'%' IDENTIFIED BY 'test_password';"
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON test_db.* TO 'test_user'@'%';"
